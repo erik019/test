@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Spaceships</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+	</head>
+	<body onload="init()">
+		<!-- The canvas for the panning background -->
+		<canvas id="background" width="600" height="360">
+		</canvas>
+		<!-- The canvas for all enemy ships and bullets -->
+		<canvas id="main" width="600" height="360">
+		</canvas>
+		<!-- The canvas the ship uses (can only move up
+         one forth the screen. -->
+		<canvas id="ship" width="600" height="360">
+		</canvas>
+		<div class="score">Puntuaci&#243;n: <span id="score"></span></div>
+		<div class="game-over" id="game-over">GAME OVER<p><span onclick="game.restart()">Reiniciar</span></p></div>
+		<div class="loading" id="loading">CARGANDO...<p>Please wait</p></div>
+		<script src="js/spaceships.js"></script>
+	</body>
+</html>
